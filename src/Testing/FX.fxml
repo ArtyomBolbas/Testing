@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="73.0" prefHeight="327.0" prefWidth="600.0" style="-fx-background-color: #FFE4B5;">
+         <children>
+            <TextField layoutX="115.0" layoutY="70.0" prefHeight="30.0" prefWidth="330.0" promptText="Логин" style="-fx-background-color: #FFE4B5; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField layoutX="115.0" layoutY="120.0" prefHeight="30.0" prefWidth="330.0" promptText="Пароль" style="-fx-background-color: #FFE4B5; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="115.0" layoutY="15.0" prefHeight="50.0" prefWidth="300.0" text="Авторизация">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#cbe4d3" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button alignment="CENTER" layoutX="115.0" layoutY="170.0" mnemonicParsing="false" onAction="buttonOpen" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #808080;" text="Войти" textFill="#d6c27a">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="520.0" layoutY="300.0" text="\@artyom_bolbas" textFill="#835f5f">
+               <font>
+                  <Font name="System Italic" size="9.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="215.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: #808080;" text="Регистрация" textFill="#d6c27a">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="5.0" layoutY="-10.0" prefHeight="80.0" prefWidth="200.0" text="Testing">
+         <font>
+            <Font name="System Bold Italic" size="56.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#cbe4d3" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="450.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #808080;" text="Выйти" textFill="#d6c27a">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
