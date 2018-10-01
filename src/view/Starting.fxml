@@ -9,7 +9,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C0C0C0;" type="AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AuthorizationController">
    <children>
       <AnchorPane layoutY="73.0" prefHeight="327.0" prefWidth="600.0" style="-fx-background-color: #FFE4B5;">
          <children>
@@ -36,7 +36,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button alignment="CENTER" layoutX="115.0" layoutY="170.0" mnemonicParsing="false" onAction="buttonOpen" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #808080;" text="Войти" textFill="#d6c27a">
+            <Button fx:id="buttonOpenID" alignment="CENTER" layoutX="115.0" layoutY="170.0" mnemonicParsing="false" onAction="buttonOpen" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #808080;" text="Войти" textFill="#d6c27a">
                <font>
                   <Font name="System Italic" size="20.0" />
                </font>
@@ -46,7 +46,7 @@
                   <Font name="System Italic" size="9.0" />
                </font>
             </Label>
-            <Button alignment="CENTER" layoutX="215.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: #808080;" text="Регистрация" textFill="#d6c27a">
+            <Button fx:id="buttonRegistrationID" alignment="CENTER" layoutX="215.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonRegistration" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: #808080;" text="Регистрация" textFill="#d6c27a">
                <font>
                   <Font name="System Italic" size="14.0" />
                </font>
@@ -66,10 +66,10 @@
             </RadialGradient>
          </textFill>
       </Label>
-      <Button layoutX="450.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #808080;" text="Выйти" textFill="#d6c27a">
+      <Button fx:id="buttonCloseID" layoutX="450.0" layoutY="15.0" mnemonicParsing="false" onAction="#buttonClose" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #808080;" text="Выйти" textFill="#d6c27a">
          <font>
             <Font name="System Italic" size="14.0" />
          </font>
       </Button>
    </children>
-</AnchorPane>
+</fx:root>
