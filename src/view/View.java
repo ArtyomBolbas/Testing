@@ -15,7 +15,8 @@ public class View {
 		try {
 			loader.load();
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Ошибка!!! " + e);
+			//e.printStackTrace();
 		}
 		Parent root = loader.getRoot();
 		primaryStage.setScene(new Scene(root));
