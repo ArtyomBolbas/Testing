@@ -20,9 +20,9 @@ public class View {
 		}
 		Parent root = loader.getRoot();
 		primaryStage.setScene(new Scene(root));
-		primaryStage.setResizable(true);
-		primaryStage.setMinHeight(700);
-		primaryStage.setMinWidth(800);
+		primaryStage.setResizable(false);
+	/*	primaryStage.setMinHeight(700);
+		primaryStage.setMinWidth(800);*/
 		primaryStage.setTitle("Testing - authorization");
 		primaryStage.show();
 	}

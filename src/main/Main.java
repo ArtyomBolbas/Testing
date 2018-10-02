@@ -17,3 +17,6 @@ public class Main extends Application {
 		launch(args);
 	}
 }
+
+
+//fx:root maxHeight="-Infinity" maxWidth="-Infinity"
