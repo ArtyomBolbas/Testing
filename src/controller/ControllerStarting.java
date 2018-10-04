@@ -6,9 +6,15 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+import main.Main;
+import view.View;
 
 public class ControllerStarting {
 
+	private Stage primaryStage = new Stage();
+	private static View view;
+	
     @FXML
     private ResourceBundle resources;
 
@@ -31,7 +37,9 @@ public class ControllerStarting {
 
     @FXML
     void buttonRegistration(ActionEvent event) {
-
+    	if(!primaryStage.isShowing()) {
+    		view.showControllerRegistrationForm(primaryStage);
+    	}
     }
     
     @FXML
@@ -42,7 +50,7 @@ public class ControllerStarting {
 
     @FXML
     void initialize() {
-
+    	view = Main.getView();
     }
 
 }

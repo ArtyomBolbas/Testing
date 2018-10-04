@@ -16,15 +16,28 @@ public class View {
 			loader.load();
 		} catch (IOException e) {
 			System.out.println("Ошибка!!! " + e);
-			//e.printStackTrace();
 		}
 		Parent root = loader.getRoot();
 		primaryStage.setScene(new Scene(root));
 		primaryStage.setResizable(false);
-	/*	primaryStage.setMinHeight(700);
-		primaryStage.setMinWidth(800);*/
-		primaryStage.setTitle("Testing - authorization");
+		primaryStage.setTitle("Testing: authorization");
 		primaryStage.show();
+	}
+	
+	public void showControllerRegistrationForm (Stage primaryStage) {
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(getClass().getResource("/view/RegistrationForm.fxml"));
+		try {
+			loader.load();
+		} catch (IOException e) {
+			System.out.println("Error!! " + e);
+		}
+		Parent root = loader.getRoot();
+		primaryStage.setScene(new Scene(root));
+		primaryStage.setResizable(false);
+		primaryStage.setTitle("Testing: registratuionForm");
+		primaryStage.show();
+		
 	}
 	
 	
