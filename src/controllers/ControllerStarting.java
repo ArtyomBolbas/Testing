@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 import java.net.URL;
 
@@ -13,7 +13,7 @@ import view.View;
 public class ControllerStarting {
 
 	private Stage primaryStage = new Stage();
-	private static View view;
+	private static View view = Main.getView();
 	
     @FXML
     private ResourceBundle resources;
@@ -37,6 +37,7 @@ public class ControllerStarting {
 
     @FXML
     void buttonRegistration(ActionEvent event) {
+		//LOG.debug("запущен метод - main(String[] args); (Главный метод приложения), в классе -  Main");
     	if(!primaryStage.isShowing()) {
     		view.showControllerRegistrationForm(primaryStage);
     	}
@@ -50,7 +51,7 @@ public class ControllerStarting {
 
     @FXML
     void initialize() {
-    	view = Main.getView();
+    	//view = Main.getView();
     }
 
 }

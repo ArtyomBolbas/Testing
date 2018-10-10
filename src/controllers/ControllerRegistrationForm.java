@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -34,7 +34,7 @@ public class ControllerRegistrationForm {
     private TextField labelCheckPasswordID;
 
     @FXML
-    private Button buttonOpenID;
+    private Button buttonNextID;
 
     @FXML
     private Button buttonBackID;
@@ -45,7 +45,7 @@ public class ControllerRegistrationForm {
     }
 
     @FXML
-    void buttonOpen(ActionEvent event) {
+    void buttonNext(ActionEvent event) {
 
     }
 
